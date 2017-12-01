@@ -748,7 +748,7 @@ load_path = helper.load_params()
 # - Convert words into ids using `vocab_to_int`
 #  - Convert words not in the vocabulary, to the `<UNK>` word id.
 
-# In[38]:
+# In[40]:
 
 
 def sentence_to_seq(sentence, vocab_to_int):
@@ -758,7 +758,7 @@ def sentence_to_seq(sentence, vocab_to_int):
     :param vocab_to_int: Dictionary to go from the words to an id
     :return: List of word ids
     """
-    return [vocab_to_int.get(word, vocab_to_int['<UNK>']) for word in sentence.split(" ")]
+    return [vocab_to_int.get(word, vocab_to_int['<UNK>']) for word in sentence.lower().split(" ")]
 
 
 """
@@ -770,7 +770,7 @@ tests.test_sentence_to_seq(sentence_to_seq)
 # ## Translate
 # This will translate `translate_sentence` from English to French.
 
-# In[39]:
+# In[41]:
 
 
 translate_sentence = 'he saw a old yellow truck .'
