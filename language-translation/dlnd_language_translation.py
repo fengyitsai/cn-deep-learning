@@ -6,7 +6,8 @@
 # ## Get the Data
 # Since translating the whole language of English to French will take lots of time to train, we have provided you with a small portion of the English corpus.
 
-# In[1]:
+# In[9]:
+
 
 """
 DON'T MODIFY ANYTHING IN THIS CELL
@@ -23,7 +24,8 @@ target_text = helper.load_data(target_path)
 # ## Explore the Data
 # Play around with view_sentence_range to view different parts of the data.
 
-# In[2]:
+# In[10]:
+
 
 view_sentence_range = (0, 10)
 
@@ -48,11 +50,6 @@ print('French sentences {} to {}:'.format(*view_sentence_range))
 print('\n'.join(target_text.split('\n')[view_sentence_range[0]:view_sentence_range[1]]))
 
 
-# In[3]:
-
-source_text.split()
-
-
 # ## Implement Preprocessing Function
 # ### Text to Word Ids
 # As you did with other RNNs, you must turn the text into a number so the computer can understand it. In the function `text_to_ids()`, you'll turn `source_text` and `target_text` from words to ids.  However, you need to add the `<EOS>` word id at the end of `target_text`.  This will help the neural network predict when the sentence should end.
@@ -63,7 +60,8 @@ source_text.split()
 # ```
 # You can get other word ids using `source_vocab_to_int` and `target_vocab_to_int`.
 
-# In[4]:
+# In[11]:
+
 
 def text_to_ids(source_text, target_text, source_vocab_to_int, target_vocab_to_int):
     """
@@ -89,7 +87,8 @@ tests.test_text_to_ids(text_to_ids)
 # ### Preprocess all the data and save it
 # Running the code cell below will preprocess all the data and save it to file.
 
-# In[5]:
+# In[12]:
+
 
 """
 DON'T MODIFY ANYTHING IN THIS CELL
@@ -100,7 +99,8 @@ helper.preprocess_and_save_data(source_path, target_path, text_to_ids)
 # # Check Point
 # This is your first checkpoint. If you ever decide to come back to this notebook or have to restart the notebook, you can start from here. The preprocessed data has been saved to disk.
 
-# In[6]:
+# In[13]:
+
 
 """
 DON'T MODIFY ANYTHING IN THIS CELL
@@ -115,7 +115,8 @@ import problem_unittests as tests
 # ### Check the Version of TensorFlow and Access to GPU
 # This will check to make sure you have the correct version of TensorFlow and access to a GPU
 
-# In[7]:
+# In[14]:
+
 
 """
 DON'T MODIFY ANYTHING IN THIS CELL
@@ -159,7 +160,8 @@ else:
 # 
 # Return the placeholders in the following the tuple (input, targets, learning rate, keep probability, target sequence length, max target sequence length, source sequence length)
 
-# In[8]:
+# In[15]:
+
 
 def model_inputs():
     """
@@ -187,7 +189,8 @@ tests.test_model_inputs(model_inputs)
 # ### Process Decoder Input
 # Implement `process_decoder_input` by removing the last word id from each batch in `target_data` and concat the GO ID to the begining of each batch.
 
-# In[9]:
+# In[16]:
+
 
 def process_decoder_input(target_data, target_vocab_to_int, batch_size):
     """
@@ -214,7 +217,8 @@ tests.test_process_encoding_input(process_decoder_input)
 #  * Construct a [stacked](https://github.com/tensorflow/tensorflow/blob/6947f65a374ebf29e74bb71e36fd82760056d82c/tensorflow/docs_src/tutorials/recurrent.md#stacking-multiple-lstms) [`tf.contrib.rnn.LSTMCell`](https://www.tensorflow.org/api_docs/python/tf/contrib/rnn/LSTMCell) wrapped in a [`tf.contrib.rnn.DropoutWrapper`](https://www.tensorflow.org/api_docs/python/tf/contrib/rnn/DropoutWrapper)
 #  * Pass cell and embedded input to [`tf.nn.dynamic_rnn()`](https://www.tensorflow.org/api_docs/python/tf/nn/dynamic_rnn)
 
-# In[12]:
+# In[17]:
+
 
 from imp import reload
 reload(tests)
@@ -260,7 +264,8 @@ tests.test_encoding_layer(encoding_layer)
 # * Create a [`tf.contrib.seq2seq.BasicDecoder`](https://www.tensorflow.org/api_docs/python/tf/contrib/seq2seq/BasicDecoder)
 # * Obtain the decoder outputs from [`tf.contrib.seq2seq.dynamic_decode`](https://www.tensorflow.org/api_docs/python/tf/contrib/seq2seq/dynamic_decode)
 
-# In[14]:
+# In[18]:
+
 
 
 def decoding_layer_train(encoder_state, dec_cell, dec_embed_input, 
@@ -305,7 +310,8 @@ tests.test_decoding_layer_train(decoding_layer_train)
 # * Create a [`tf.contrib.seq2seq.BasicDecoder`](https://www.tensorflow.org/api_docs/python/tf/contrib/seq2seq/BasicDecoder)
 # * Obtain the decoder outputs from [`tf.contrib.seq2seq.dynamic_decode`](https://www.tensorflow.org/api_docs/python/tf/contrib/seq2seq/dynamic_decode)
 
-# In[16]:
+# In[19]:
+
 
 def decoding_layer_infer(encoder_state, dec_cell, dec_embeddings, start_of_sequence_id,
                          end_of_sequence_id, max_target_sequence_length,
@@ -364,7 +370,8 @@ tests.test_decoding_layer_infer(decoding_layer_infer)
 # 
 # Note: You'll need to use [tf.variable_scope](https://www.tensorflow.org/api_docs/python/tf/variable_scope) to share variables between training and inference.
 
-# In[19]:
+# In[20]:
+
 
 def decoding_layer(dec_input, encoder_state,
                    target_sequence_length, max_target_sequence_length,
@@ -435,7 +442,8 @@ tests.test_decoding_layer(decoding_layer)
 # - Process target data using your `process_decoder_input(target_data, target_vocab_to_int, batch_size)` function.
 # - Decode the encoded input using your `decoding_layer(dec_input, enc_state, target_sequence_length, max_target_sentence_length, rnn_size, num_layers, target_vocab_to_int, target_vocab_size, batch_size, keep_prob, dec_embedding_size)` function.
 
-# In[27]:
+# In[21]:
+
 
 def seq2seq_model(input_data, target_data, keep_prob, batch_size,
                   source_sequence_length, target_sequence_length,
@@ -501,28 +509,30 @@ tests.test_seq2seq_model(seq2seq_model)
 
 # In[32]:
 
+
 # Number of Epochs
-epochs = 10
+epochs = 5
 # Batch Size
 batch_size = 128
 # RNN Size
-rnn_size = 60
+rnn_size = 256
 # Number of Layers
-num_layers = 2
+num_layers = 3
 # Embedding Size
-encoding_embedding_size = 60
-decoding_embedding_size = 60
+encoding_embedding_size = 128
+decoding_embedding_size = 128
 # Learning Rate
 learning_rate = 0.001
 # Dropout Keep Probability
-keep_probability = 0.5
+keep_probability = 0.6
 display_step = 100
 
 
 # ### Build the Graph
 # Build the graph using the neural network you implemented.
 
-# In[29]:
+# In[33]:
+
 
 """
 DON'T MODIFY ANYTHING IN THIS CELL
@@ -577,7 +587,8 @@ with train_graph.as_default():
 
 # Batch and pad the source and target sequences
 
-# In[30]:
+# In[34]:
+
 
 """
 DON'T MODIFY ANYTHING IN THIS CELL
@@ -616,7 +627,8 @@ def get_batches(sources, targets, batch_size, source_pad_int, target_pad_int):
 # ### Train
 # Train the neural network on the preprocessed data. If you have a hard time getting a good loss, check the forms to see if anyone is having the same problem.
 
-# In[33]:
+# In[35]:
+
 
 """
 DON'T MODIFY ANYTHING IN THIS CELL
@@ -702,7 +714,8 @@ with tf.Session(graph=train_graph) as sess:
 # ### Save Parameters
 # Save the `batch_size` and `save_path` parameters for inference.
 
-# In[34]:
+# In[36]:
+
 
 """
 DON'T MODIFY ANYTHING IN THIS CELL
@@ -713,7 +726,8 @@ helper.save_params(save_path)
 
 # # Checkpoint
 
-# In[35]:
+# In[37]:
+
 
 """
 DON'T MODIFY ANYTHING IN THIS CELL
@@ -734,7 +748,8 @@ load_path = helper.load_params()
 # - Convert words into ids using `vocab_to_int`
 #  - Convert words not in the vocabulary, to the `<UNK>` word id.
 
-# In[39]:
+# In[38]:
+
 
 def sentence_to_seq(sentence, vocab_to_int):
     """
@@ -755,7 +770,8 @@ tests.test_sentence_to_seq(sentence_to_seq)
 # ## Translate
 # This will translate `translate_sentence` from English to French.
 
-# In[40]:
+# In[39]:
+
 
 translate_sentence = 'he saw a old yellow truck .'
 

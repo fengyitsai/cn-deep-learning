@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,8 +11771,7 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11786,7 +11783,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -11806,8 +11803,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11818,7 +11814,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">view_sentence_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
@@ -11853,7 +11849,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dataset Stats
@@ -11892,1039 +11890,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">source_text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[3]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&#39;new&#39;,
- &#39;jersey&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;quiet&#39;,
- &#39;during&#39;,
- &#39;autumn&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;snowy&#39;,
- &#39;in&#39;,
- &#39;april&#39;,
- &#39;.&#39;,
- &#39;the&#39;,
- &#39;united&#39;,
- &#39;states&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;chilly&#39;,
- &#39;during&#39;,
- &#39;july&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;freezing&#39;,
- &#39;in&#39;,
- &#39;november&#39;,
- &#39;.&#39;,
- &#39;california&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;quiet&#39;,
- &#39;during&#39;,
- &#39;march&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;hot&#39;,
- &#39;in&#39;,
- &#39;june&#39;,
- &#39;.&#39;,
- &#39;the&#39;,
- &#39;united&#39;,
- &#39;states&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;mild&#39;,
- &#39;during&#39;,
- &#39;june&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;cold&#39;,
- &#39;in&#39;,
- &#39;september&#39;,
- &#39;.&#39;,
- &#39;your&#39;,
- &#39;least&#39;,
- &#39;liked&#39;,
- &#39;fruit&#39;,
- &#39;is&#39;,
- &#39;the&#39;,
- &#39;grape&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;my&#39;,
- &#39;least&#39;,
- &#39;liked&#39;,
- &#39;is&#39;,
- &#39;the&#39;,
- &#39;apple&#39;,
- &#39;.&#39;,
- &#39;his&#39;,
- &#39;favorite&#39;,
- &#39;fruit&#39;,
- &#39;is&#39;,
- &#39;the&#39;,
- &#39;orange&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;my&#39;,
- &#39;favorite&#39;,
- &#39;is&#39;,
- &#39;the&#39;,
- &#39;grape&#39;,
- &#39;.&#39;,
- &#39;paris&#39;,
- &#39;is&#39;,
- &#39;relaxing&#39;,
- &#39;during&#39;,
- &#39;december&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;chilly&#39;,
- &#39;in&#39;,
- &#39;july&#39;,
- &#39;.&#39;,
- &#39;new&#39;,
- &#39;jersey&#39;,
- &#39;is&#39;,
- &#39;busy&#39;,
- &#39;during&#39;,
- &#39;spring&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;hot&#39;,
- &#39;in&#39;,
- &#39;march&#39;,
- &#39;.&#39;,
- &#39;our&#39;,
- &#39;least&#39;,
- &#39;liked&#39;,
- &#39;fruit&#39;,
- &#39;is&#39;,
- &#39;the&#39;,
- &#39;lemon&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;my&#39;,
- &#39;least&#39;,
- &#39;liked&#39;,
- &#39;is&#39;,
- &#39;the&#39;,
- &#39;grape&#39;,
- &#39;.&#39;,
- &#39;the&#39;,
- &#39;united&#39;,
- &#39;states&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;busy&#39;,
- &#39;during&#39;,
- &#39;january&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;warm&#39;,
- &#39;in&#39;,
- &#39;november&#39;,
- &#39;.&#39;,
- &#39;the&#39;,
- &#39;lime&#39;,
- &#39;is&#39;,
- &#39;her&#39;,
- &#39;least&#39;,
- &#39;liked&#39;,
- &#39;fruit&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;the&#39;,
- &#39;banana&#39;,
- &#39;is&#39;,
- &#39;my&#39;,
- &#39;least&#39;,
- &#39;liked&#39;,
- &#39;.&#39;,
- &#39;he&#39;,
- &#39;saw&#39;,
- &#39;a&#39;,
- &#39;old&#39;,
- &#39;yellow&#39;,
- &#39;truck&#39;,
- &#39;.&#39;,
- &#39;india&#39;,
- &#39;is&#39;,
- &#39;rainy&#39;,
- &#39;during&#39;,
- &#39;june&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;warm&#39;,
- &#39;in&#39;,
- &#39;november&#39;,
- &#39;.&#39;,
- &#39;that&#39;,
- &#39;cat&#39;,
- &#39;was&#39;,
- &#39;my&#39;,
- &#39;most&#39;,
- &#39;loved&#39;,
- &#39;animal&#39;,
- &#39;.&#39;,
- &#39;he&#39;,
- &#39;dislikes&#39;,
- &#39;grapefruit&#39;,
- &#39;,&#39;,
- &#39;limes&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;lemons&#39;,
- &#39;.&#39;,
- &#39;her&#39;,
- &#39;least&#39;,
- &#39;liked&#39;,
- &#39;fruit&#39;,
- &#39;is&#39;,
- &#39;the&#39;,
- &#39;lemon&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;his&#39;,
- &#39;least&#39;,
- &#39;liked&#39;,
- &#39;is&#39;,
- &#39;the&#39;,
- &#39;grapefruit&#39;,
- &#39;.&#39;,
- &#39;california&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;cold&#39;,
- &#39;during&#39;,
- &#39;february&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;freezing&#39;,
- &#39;in&#39;,
- &#39;june&#39;,
- &#39;.&#39;,
- &#39;china&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;pleasant&#39;,
- &#39;during&#39;,
- &#39;autumn&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;quiet&#39;,
- &#39;in&#39;,
- &#39;october&#39;,
- &#39;.&#39;,
- &#39;paris&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;freezing&#39;,
- &#39;during&#39;,
- &#39;november&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;wonderful&#39;,
- &#39;in&#39;,
- &#39;october&#39;,
- &#39;.&#39;,
- &#39;the&#39;,
- &#39;united&#39;,
- &#39;states&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;rainy&#39;,
- &#39;during&#39;,
- &#39;january&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;mild&#39;,
- &#39;in&#39;,
- &#39;october&#39;,
- &#39;.&#39;,
- &#39;china&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;pleasant&#39;,
- &#39;during&#39;,
- &#39;november&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;quiet&#39;,
- &#39;in&#39;,
- &#39;october&#39;,
- &#39;.&#39;,
- &#39;the&#39;,
- &#39;united&#39;,
- &#39;states&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;nice&#39;,
- &#39;during&#39;,
- &#39;february&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;pleasant&#39;,
- &#39;in&#39;,
- &#39;april&#39;,
- &#39;.&#39;,
- &#39;india&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;busy&#39;,
- &#39;during&#39;,
- &#39;autumn&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;mild&#39;,
- &#39;in&#39;,
- &#39;spring&#39;,
- &#39;.&#39;,
- &#39;paris&#39;,
- &#39;is&#39;,
- &#39;mild&#39;,
- &#39;during&#39;,
- &#39;summer&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;busy&#39;,
- &#39;in&#39;,
- &#39;april&#39;,
- &#39;.&#39;,
- &#39;france&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;cold&#39;,
- &#39;during&#39;,
- &#39;september&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;snowy&#39;,
- &#39;in&#39;,
- &#39;october&#39;,
- &#39;.&#39;,
- &#39;california&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;cold&#39;,
- &#39;during&#39;,
- &#39;may&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;chilly&#39;,
- &#39;in&#39;,
- &#39;march&#39;,
- &#39;.&#39;,
- &#39;he&#39;,
- &#39;dislikes&#39;,
- &#39;lemons&#39;,
- &#39;,&#39;,
- &#39;grapes&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;mangoes.&#39;,
- &#39;their&#39;,
- &#39;favorite&#39;,
- &#39;fruit&#39;,
- &#39;is&#39;,
- &#39;the&#39;,
- &#39;mango&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;our&#39;,
- &#39;favorite&#39;,
- &#39;is&#39;,
- &#39;the&#39;,
- &#39;pear&#39;,
- &#39;.&#39;,
- &#39;france&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;quiet&#39;,
- &#39;during&#39;,
- &#39;may&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;chilly&#39;,
- &#39;in&#39;,
- &#39;august&#39;,
- &#39;.&#39;,
- &#39;paris&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;pleasant&#39;,
- &#39;during&#39;,
- &#39;september&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;beautiful&#39;,
- &#39;in&#39;,
- &#39;autumn&#39;,
- &#39;.&#39;,
- &#39;he&#39;,
- &#39;dislikes&#39;,
- &#39;apples&#39;,
- &#39;,&#39;,
- &#39;peaches&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;grapes&#39;,
- &#39;.&#39;,
- &#39;california&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;freezing&#39;,
- &#39;during&#39;,
- &#39;december&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;busy&#39;,
- &#39;in&#39;,
- &#39;april&#39;,
- &#39;.&#39;,
- &#39;your&#39;,
- &#39;most&#39;,
- &#39;feared&#39;,
- &#39;animal&#39;,
- &#39;is&#39;,
- &#39;that&#39;,
- &#39;shark&#39;,
- &#39;.&#39;,
- &#39;paris&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;wet&#39;,
- &#39;during&#39;,
- &#39;august&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;dry&#39;,
- &#39;in&#39;,
- &#39;november&#39;,
- &#39;.&#39;,
- &#39;paris&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;beautiful&#39;,
- &#39;during&#39;,
- &#39;september&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;snowy&#39;,
- &#39;in&#39;,
- &#39;november&#39;,
- &#39;.&#39;,
- &#39;the&#39;,
- &#39;united&#39;,
- &#39;states&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;wet&#39;,
- &#39;during&#39;,
- &#39;january&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;hot&#39;,
- &#39;in&#39;,
- &#39;october&#39;,
- &#39;.&#39;,
- &#39;we&#39;,
- &#39;like&#39;,
- &#39;oranges&#39;,
- &#39;,&#39;,
- &#39;mangoes&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;grapes&#39;,
- &#39;.&#39;,
- &#39;they&#39;,
- &#39;like&#39;,
- &#39;pears&#39;,
- &#39;,&#39;,
- &#39;apples&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;mangoes&#39;,
- &#39;.&#39;,
- &#39;she&#39;,
- &#39;dislikes&#39;,
- &#39;that&#39;,
- &#39;little&#39;,
- &#39;red&#39;,
- &#39;truck&#39;,
- &#39;.&#39;,
- &#39;the&#39;,
- &#39;grapefruit&#39;,
- &#39;is&#39;,
- &#39;my&#39;,
- &#39;most&#39;,
- &#39;loved&#39;,
- &#39;fruit&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;the&#39;,
- &#39;banana&#39;,
- &#39;is&#39;,
- &#39;her&#39;,
- &#39;most&#39;,
- &#39;loved&#39;,
- &#39;.&#39;,
- &#39;france&#39;,
- &#39;is&#39;,
- &#39;snowy&#39;,
- &#39;during&#39;,
- &#39;may&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;busy&#39;,
- &#39;in&#39;,
- &#39;autumn&#39;,
- &#39;.&#39;,
- &#39;china&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;mild&#39;,
- &#39;during&#39;,
- &#39;winter&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;busy&#39;,
- &#39;in&#39;,
- &#39;february&#39;,
- &#39;.&#39;,
- &#39;china&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;nice&#39;,
- &#39;during&#39;,
- &#39;july&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;snowy&#39;,
- &#39;in&#39;,
- &#39;spring&#39;,
- &#39;.&#39;,
- &#39;california&#39;,
- &#39;is&#39;,
- &#39;busy&#39;,
- &#39;during&#39;,
- &#39;november&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;rainy&#39;,
- &#39;in&#39;,
- &#39;autumn&#39;,
- &#39;.&#39;,
- &#39;china&#39;,
- &#39;is&#39;,
- &#39;warm&#39;,
- &#39;during&#39;,
- &#39;spring&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;cold&#39;,
- &#39;in&#39;,
- &#39;february&#39;,
- &#39;.&#39;,
- &#39;california&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;beautiful&#39;,
- &#39;during&#39;,
- &#39;winter&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;busy&#39;,
- &#39;in&#39;,
- &#39;february&#39;,
- &#39;.&#39;,
- &#39;france&#39;,
- &#39;is&#39;,
- &#39;wonderful&#39;,
- &#39;during&#39;,
- &#39;november&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;hot&#39;,
- &#39;in&#39;,
- &#39;september&#39;,
- &#39;.&#39;,
- &#39;india&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;pleasant&#39;,
- &#39;during&#39;,
- &#39;november&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;relaxing&#39;,
- &#39;in&#39;,
- &#39;july&#39;,
- &#39;.&#39;,
- &#39;the&#39;,
- &#39;united&#39;,
- &#39;states&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;freezing&#39;,
- &#39;during&#39;,
- &#39;autumn&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;busy&#39;,
- &#39;in&#39;,
- &#39;june&#39;,
- &#39;.&#39;,
- &#39;paris&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;warm&#39;,
- &#39;during&#39;,
- &#39;june&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;hot&#39;,
- &#39;in&#39;,
- &#39;july&#39;,
- &#39;.&#39;,
- &#39;paris&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;hot&#39;,
- &#39;during&#39;,
- &#39;summer&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;mild&#39;,
- &#39;in&#39;,
- &#39;winter&#39;,
- &#39;.&#39;,
- &#39;she&#39;,
- &#39;disliked&#39;,
- &#39;a&#39;,
- &#39;rusty&#39;,
- &#39;yellow&#39;,
- &#39;car&#39;,
- &#39;.&#39;,
- &#39;france&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;quiet&#39;,
- &#39;during&#39;,
- &#39;november&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;warm&#39;,
- &#39;in&#39;,
- &#39;february&#39;,
- &#39;.&#39;,
- &#39;new&#39;,
- &#39;jersey&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;wet&#39;,
- &#39;during&#39;,
- &#39;november&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;mild&#39;,
- &#39;in&#39;,
- &#39;august&#39;,
- &#39;.&#39;,
- &#39;we&#39;,
- &#39;like&#39;,
- &#39;peaches&#39;,
- &#39;,&#39;,
- &#39;pears&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;strawberries&#39;,
- &#39;.&#39;,
- &#39;the&#39;,
- &#39;orange&#39;,
- &#39;is&#39;,
- &#39;her&#39;,
- &#39;least&#39;,
- &#39;liked&#39;,
- &#39;fruit&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;the&#39;,
- &#39;grapefruit&#39;,
- &#39;is&#39;,
- &#39;their&#39;,
- &#39;least&#39;,
- &#39;liked&#39;,
- &#39;.&#39;,
- &#39;china&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;rainy&#39;,
- &#39;during&#39;,
- &#39;november&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;quiet&#39;,
- &#39;in&#39;,
- &#39;january&#39;,
- &#39;.&#39;,
- &#39;china&#39;,
- &#39;is&#39;,
- &#39;relaxing&#39;,
- &#39;during&#39;,
- &#39;march&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;snowy&#39;,
- &#39;in&#39;,
- &#39;september&#39;,
- &#39;.&#39;,
- &#39;paris&#39;,
- &#39;is&#39;,
- &#39;wonderful&#39;,
- &#39;during&#39;,
- &#39;march&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;pleasant&#39;,
- &#39;in&#39;,
- &#39;june&#39;,
- &#39;.&#39;,
- &#39;new&#39;,
- &#39;jersey&#39;,
- &#39;is&#39;,
- &#39;chilly&#39;,
- &#39;during&#39;,
- &#39;autumn&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;pleasant&#39;,
- &#39;in&#39;,
- &#39;spring&#39;,
- &#39;.&#39;,
- &#39;california&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;freezing&#39;,
- &#39;during&#39;,
- &#39;october&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;quiet&#39;,
- &#39;in&#39;,
- &#39;june&#39;,
- &#39;.&#39;,
- &#39;new&#39;,
- &#39;jersey&#39;,
- &#39;is&#39;,
- &#39;freezing&#39;,
- &#39;during&#39;,
- &#39;winter&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;wonderful&#39;,
- &#39;in&#39;,
- &#39;january&#39;,
- &#39;.&#39;,
- &#39;i&#39;,
- &#39;like&#39;,
- &#39;grapes&#39;,
- &#39;,&#39;,
- &#39;pears&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;strawberries&#39;,
- &#39;.&#39;,
- &#39;the&#39;,
- &#39;lemon&#39;,
- &#39;is&#39;,
- &#39;my&#39;,
- &#39;most&#39;,
- &#39;loved&#39;,
- &#39;fruit&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;the&#39;,
- &#39;strawberry&#39;,
- &#39;is&#39;,
- &#39;our&#39;,
- &#39;most&#39;,
- &#39;loved&#39;,
- &#39;.&#39;,
- &#39;china&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;dry&#39;,
- &#39;during&#39;,
- &#39;march&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;nice&#39;,
- &#39;in&#39;,
- &#39;november&#39;,
- &#39;.&#39;,
- &#39;paris&#39;,
- &#39;is&#39;,
- &#39;pleasant&#39;,
- &#39;during&#39;,
- &#39;december&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;nice&#39;,
- &#39;in&#39;,
- &#39;november&#39;,
- &#39;.&#39;,
- &#39;china&#39;,
- &#39;is&#39;,
- &#39;freezing&#39;,
- &#39;during&#39;,
- &#39;july&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;relaxing&#39;,
- &#39;in&#39;,
- &#39;january&#39;,
- &#39;.&#39;,
- &#39;the&#39;,
- &#39;apple&#39;,
- &#39;is&#39;,
- &#39;our&#39;,
- &#39;least&#39;,
- &#39;favorite&#39;,
- &#39;fruit&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;the&#39;,
- &#39;orange&#39;,
- &#39;is&#39;,
- &#39;her&#39;,
- &#39;least&#39;,
- &#39;favorite&#39;,
- &#39;.&#39;,
- &#39;he&#39;,
- &#39;dislikes&#39;,
- &#39;grapes&#39;,
- &#39;,&#39;,
- &#39;grapefruit&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;bananas.&#39;,
- &#39;he&#39;,
- &#39;dislikes&#39;,
- &#39;apples&#39;,
- &#39;,&#39;,
- &#39;mangoes&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;strawberries&#39;,
- &#39;.&#39;,
- &#39;china&#39;,
- &#39;is&#39;,
- &#39;hot&#39;,
- &#39;during&#39;,
- &#39;july&#39;,
- &#39;,&#39;,
- &#39;but&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;never&#39;,
- &#39;pleasant&#39;,
- &#39;in&#39;,
- &#39;january&#39;,
- &#39;.&#39;,
- &#39;india&#39;,
- &#39;is&#39;,
- &#39;usually&#39;,
- &#39;dry&#39;,
- &#39;during&#39;,
- &#39;april&#39;,
- &#39;,&#39;,
- &#39;and&#39;,
- &#39;it&#39;,
- &#39;is&#39;,
- &#39;freezing&#39;,
- &#39;in&#39;,
- &#39;february&#39;,
- &#39;.&#39;,
- &#39;she&#39;,
- &#39;is&#39;,
- &#39;going&#39;,
- &#39;to&#39;,
- &#39;the&#39;,
- &#39;united&#39;,
- &#39;states&#39;,
- &#39;next&#39;,
- &#39;summer&#39;,
- &#39;.&#39;,
- &#39;france&#39;,
- &#39;is&#39;,
- &#39;sometimes&#39;,
- &#39;rainy&#39;,
- &#39;during&#39;,
- &#39;february&#39;,
- &#39;,&#39;,
- ...]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12939,7 +11905,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">text_to_ids</span><span class="p">(</span><span class="n">source_text</span><span class="p">,</span> <span class="n">target_text</span><span class="p">,</span> <span class="n">source_vocab_to_int</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">):</span>
@@ -12972,7 +11938,9 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -12984,8 +11952,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12996,7 +11963,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13010,8 +11977,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13022,7 +11988,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13040,8 +12006,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13052,7 +12017,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13083,7 +12048,9 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>TensorFlow Version: 1.4.0
@@ -13092,10 +12059,13 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/Users/Fengyi/anaconda/envs/dlnd-tf-lab/lib/python3.5/site-packages/ipykernel/__main__.py:15: UserWarning: No GPU found. Please use a GPU to train your neural network.
+<pre>/Users/ST20991/anaconda3/envs/fengyi/lib/python3.6/site-packages/ipykernel_launcher.py:15: UserWarning: No GPU found. Please use a GPU to train your neural network.
+  from ipykernel import kernelapp as app
 </pre>
 </div>
 </div>
@@ -13104,8 +12074,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13136,7 +12105,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">model_inputs</span><span class="p">():</span>
@@ -13171,7 +12140,9 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -13183,8 +12154,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13195,7 +12165,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">process_decoder_input</span><span class="p">(</span><span class="n">target_data</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">):</span>
@@ -13226,7 +12196,9 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -13238,8 +12210,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13255,7 +12226,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">imp</span> <span class="k">import</span> <span class="n">reload</span>
@@ -13305,7 +12276,9 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -13317,8 +12290,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13334,7 +12306,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer_train</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">dec_cell</span><span class="p">,</span> <span class="n">dec_embed_input</span><span class="p">,</span> 
@@ -13382,7 +12354,9 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -13394,8 +12368,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13411,7 +12384,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer_infer</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">dec_cell</span><span class="p">,</span> <span class="n">dec_embeddings</span><span class="p">,</span> <span class="n">start_of_sequence_id</span><span class="p">,</span>
@@ -13469,7 +12442,9 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -13481,8 +12456,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13501,7 +12475,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer</span><span class="p">(</span><span class="n">dec_input</span><span class="p">,</span> <span class="n">encoder_state</span><span class="p">,</span>
@@ -13575,7 +12549,9 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -13587,8 +12563,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13604,7 +12579,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">seq2seq_model</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">target_data</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span>
@@ -13664,7 +12639,9 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -13676,8 +12653,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13703,20 +12679,20 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Number of Epochs</span>
-<span class="n">epochs</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">epochs</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="c1"># Batch Size</span>
 <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">128</span>
 <span class="c1"># RNN Size</span>
-<span class="n">rnn_size</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">rnn_size</span> <span class="o">=</span> <span class="mi">256</span>
 <span class="c1"># Number of Layers</span>
-<span class="n">num_layers</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">num_layers</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="c1"># Embedding Size</span>
-<span class="n">encoding_embedding_size</span> <span class="o">=</span> <span class="mi">60</span>
-<span class="n">decoding_embedding_size</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">encoding_embedding_size</span> <span class="o">=</span> <span class="mi">128</span>
+<span class="n">decoding_embedding_size</span> <span class="o">=</span> <span class="mi">128</span>
 <span class="c1"># Learning Rate</span>
 <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.001</span>
 <span class="c1"># Dropout Keep Probability</span>
-<span class="n">keep_probability</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">keep_probability</span> <span class="o">=</span> <span class="mf">0.6</span>
 <span class="n">display_step</span> <span class="o">=</span> <span class="mi">100</span>
 </pre></div>
 
@@ -13725,8 +12701,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13737,7 +12712,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13796,8 +12771,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13808,7 +12782,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13850,8 +12824,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13862,7 +12835,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13955,109 +12928,61 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch   0 Batch  100/1077 - Train Accuracy: 0.2617, Validation Accuracy: 0.3363, Loss: 3.2215
-Epoch   0 Batch  200/1077 - Train Accuracy: 0.3293, Validation Accuracy: 0.3803, Loss: 2.9076
-Epoch   0 Batch  300/1077 - Train Accuracy: 0.3738, Validation Accuracy: 0.4535, Loss: 2.7935
-Epoch   0 Batch  400/1077 - Train Accuracy: 0.4184, Validation Accuracy: 0.4712, Loss: 2.4786
-Epoch   0 Batch  500/1077 - Train Accuracy: 0.4344, Validation Accuracy: 0.4691, Loss: 2.2051
-Epoch   0 Batch  600/1077 - Train Accuracy: 0.4937, Validation Accuracy: 0.5004, Loss: 1.9437
-Epoch   0 Batch  700/1077 - Train Accuracy: 0.4574, Validation Accuracy: 0.5110, Loss: 1.7996
-Epoch   0 Batch  800/1077 - Train Accuracy: 0.4652, Validation Accuracy: 0.5224, Loss: 1.6915
-Epoch   0 Batch  900/1077 - Train Accuracy: 0.4988, Validation Accuracy: 0.5423, Loss: 1.5364
-Epoch   0 Batch 1000/1077 - Train Accuracy: 0.4833, Validation Accuracy: 0.5025, Loss: 1.2525
-Epoch   1 Batch  100/1077 - Train Accuracy: 0.3762, Validation Accuracy: 0.4134, Loss: 1.1213
-Epoch   1 Batch  200/1077 - Train Accuracy: 0.4270, Validation Accuracy: 0.4446, Loss: 1.0511
-Epoch   1 Batch  300/1077 - Train Accuracy: 0.3680, Validation Accuracy: 0.4432, Loss: 1.0237
-Epoch   1 Batch  400/1077 - Train Accuracy: 0.4840, Validation Accuracy: 0.5057, Loss: 0.9361
-Epoch   1 Batch  500/1077 - Train Accuracy: 0.5414, Validation Accuracy: 0.5653, Loss: 0.8746
-Epoch   1 Batch  600/1077 - Train Accuracy: 0.5703, Validation Accuracy: 0.5707, Loss: 0.7921
-Epoch   1 Batch  700/1077 - Train Accuracy: 0.5449, Validation Accuracy: 0.5749, Loss: 0.7716
-Epoch   1 Batch  800/1077 - Train Accuracy: 0.5125, Validation Accuracy: 0.5604, Loss: 0.7769
-Epoch   1 Batch  900/1077 - Train Accuracy: 0.5594, Validation Accuracy: 0.5763, Loss: 0.7674
-Epoch   1 Batch 1000/1077 - Train Accuracy: 0.6053, Validation Accuracy: 0.5945, Loss: 0.6726
-Epoch   2 Batch  100/1077 - Train Accuracy: 0.6031, Validation Accuracy: 0.6058, Loss: 0.6825
-Epoch   2 Batch  200/1077 - Train Accuracy: 0.5879, Validation Accuracy: 0.6062, Loss: 0.6708
-Epoch   2 Batch  300/1077 - Train Accuracy: 0.5789, Validation Accuracy: 0.6051, Loss: 0.6586
-Epoch   2 Batch  400/1077 - Train Accuracy: 0.5953, Validation Accuracy: 0.6239, Loss: 0.6360
-Epoch   2 Batch  500/1077 - Train Accuracy: 0.5848, Validation Accuracy: 0.6200, Loss: 0.6185
-Epoch   2 Batch  600/1077 - Train Accuracy: 0.6380, Validation Accuracy: 0.6257, Loss: 0.5579
-Epoch   2 Batch  700/1077 - Train Accuracy: 0.5762, Validation Accuracy: 0.6254, Loss: 0.5808
-Epoch   2 Batch  800/1077 - Train Accuracy: 0.5730, Validation Accuracy: 0.6385, Loss: 0.5735
-Epoch   2 Batch  900/1077 - Train Accuracy: 0.6324, Validation Accuracy: 0.6385, Loss: 0.5670
-Epoch   2 Batch 1000/1077 - Train Accuracy: 0.6585, Validation Accuracy: 0.6406, Loss: 0.4980
-Epoch   3 Batch  100/1077 - Train Accuracy: 0.6570, Validation Accuracy: 0.6580, Loss: 0.5223
-Epoch   3 Batch  200/1077 - Train Accuracy: 0.6402, Validation Accuracy: 0.6648, Loss: 0.5108
-Epoch   3 Batch  300/1077 - Train Accuracy: 0.6493, Validation Accuracy: 0.6527, Loss: 0.4967
-Epoch   3 Batch  400/1077 - Train Accuracy: 0.6551, Validation Accuracy: 0.6605, Loss: 0.4903
-Epoch   3 Batch  500/1077 - Train Accuracy: 0.6664, Validation Accuracy: 0.6587, Loss: 0.4556
-Epoch   3 Batch  600/1077 - Train Accuracy: 0.6983, Validation Accuracy: 0.6641, Loss: 0.4211
-Epoch   3 Batch  700/1077 - Train Accuracy: 0.5953, Validation Accuracy: 0.6772, Loss: 0.4366
-Epoch   3 Batch  800/1077 - Train Accuracy: 0.6527, Validation Accuracy: 0.6811, Loss: 0.4350
-Epoch   3 Batch  900/1077 - Train Accuracy: 0.7051, Validation Accuracy: 0.6804, Loss: 0.4263
-Epoch   3 Batch 1000/1077 - Train Accuracy: 0.7176, Validation Accuracy: 0.6871, Loss: 0.3777
-Epoch   4 Batch  100/1077 - Train Accuracy: 0.6930, Validation Accuracy: 0.6935, Loss: 0.3978
-Epoch   4 Batch  200/1077 - Train Accuracy: 0.6984, Validation Accuracy: 0.6953, Loss: 0.3881
-Epoch   4 Batch  300/1077 - Train Accuracy: 0.6875, Validation Accuracy: 0.6996, Loss: 0.3791
-Epoch   4 Batch  400/1077 - Train Accuracy: 0.7055, Validation Accuracy: 0.7024, Loss: 0.3835
-Epoch   4 Batch  500/1077 - Train Accuracy: 0.7176, Validation Accuracy: 0.7138, Loss: 0.3520
-Epoch   4 Batch  600/1077 - Train Accuracy: 0.7548, Validation Accuracy: 0.7085, Loss: 0.3261
-Epoch   4 Batch  700/1077 - Train Accuracy: 0.6469, Validation Accuracy: 0.7070, Loss: 0.3290
-Epoch   4 Batch  800/1077 - Train Accuracy: 0.6879, Validation Accuracy: 0.7134, Loss: 0.3371
-Epoch   4 Batch  900/1077 - Train Accuracy: 0.7551, Validation Accuracy: 0.7049, Loss: 0.3265
-Epoch   4 Batch 1000/1077 - Train Accuracy: 0.7362, Validation Accuracy: 0.7145, Loss: 0.2905
-Epoch   5 Batch  100/1077 - Train Accuracy: 0.7684, Validation Accuracy: 0.7223, Loss: 0.2924
-Epoch   5 Batch  200/1077 - Train Accuracy: 0.7332, Validation Accuracy: 0.7330, Loss: 0.2885
-Epoch   5 Batch  300/1077 - Train Accuracy: 0.7447, Validation Accuracy: 0.7393, Loss: 0.2741
-Epoch   5 Batch  400/1077 - Train Accuracy: 0.7621, Validation Accuracy: 0.7461, Loss: 0.2857
-Epoch   5 Batch  500/1077 - Train Accuracy: 0.7699, Validation Accuracy: 0.7614, Loss: 0.2558
-Epoch   5 Batch  600/1077 - Train Accuracy: 0.7790, Validation Accuracy: 0.7550, Loss: 0.2415
-Epoch   5 Batch  700/1077 - Train Accuracy: 0.7227, Validation Accuracy: 0.7486, Loss: 0.2293
-Epoch   5 Batch  800/1077 - Train Accuracy: 0.7375, Validation Accuracy: 0.7706, Loss: 0.2485
-Epoch   5 Batch  900/1077 - Train Accuracy: 0.8063, Validation Accuracy: 0.7908, Loss: 0.2428
-Epoch   5 Batch 1000/1077 - Train Accuracy: 0.7835, Validation Accuracy: 0.7653, Loss: 0.2094
-Epoch   6 Batch  100/1077 - Train Accuracy: 0.8215, Validation Accuracy: 0.7646, Loss: 0.2081
-Epoch   6 Batch  200/1077 - Train Accuracy: 0.7516, Validation Accuracy: 0.7812, Loss: 0.2121
-Epoch   6 Batch  300/1077 - Train Accuracy: 0.8014, Validation Accuracy: 0.7770, Loss: 0.1908
-Epoch   6 Batch  400/1077 - Train Accuracy: 0.8008, Validation Accuracy: 0.7809, Loss: 0.2094
-Epoch   6 Batch  500/1077 - Train Accuracy: 0.7910, Validation Accuracy: 0.7766, Loss: 0.1832
-Epoch   6 Batch  600/1077 - Train Accuracy: 0.8155, Validation Accuracy: 0.7940, Loss: 0.1721
-Epoch   6 Batch  700/1077 - Train Accuracy: 0.7809, Validation Accuracy: 0.7812, Loss: 0.1599
-Epoch   6 Batch  800/1077 - Train Accuracy: 0.8152, Validation Accuracy: 0.7983, Loss: 0.1774
-Epoch   6 Batch  900/1077 - Train Accuracy: 0.8078, Validation Accuracy: 0.7915, Loss: 0.1790
-Epoch   6 Batch 1000/1077 - Train Accuracy: 0.8359, Validation Accuracy: 0.8043, Loss: 0.1517
-Epoch   7 Batch  100/1077 - Train Accuracy: 0.8359, Validation Accuracy: 0.8210, Loss: 0.1511
-Epoch   7 Batch  200/1077 - Train Accuracy: 0.8164, Validation Accuracy: 0.8157, Loss: 0.1526
-Epoch   7 Batch  300/1077 - Train Accuracy: 0.8380, Validation Accuracy: 0.8036, Loss: 0.1340
-Epoch   7 Batch  400/1077 - Train Accuracy: 0.8336, Validation Accuracy: 0.8100, Loss: 0.1564
-Epoch   7 Batch  500/1077 - Train Accuracy: 0.8473, Validation Accuracy: 0.8086, Loss: 0.1335
-Epoch   7 Batch  600/1077 - Train Accuracy: 0.8385, Validation Accuracy: 0.8324, Loss: 0.1271
-Epoch   7 Batch  700/1077 - Train Accuracy: 0.8551, Validation Accuracy: 0.8384, Loss: 0.1162
-Epoch   7 Batch  800/1077 - Train Accuracy: 0.8547, Validation Accuracy: 0.8327, Loss: 0.1289
-Epoch   7 Batch  900/1077 - Train Accuracy: 0.8527, Validation Accuracy: 0.8004, Loss: 0.1335
-Epoch   7 Batch 1000/1077 - Train Accuracy: 0.8605, Validation Accuracy: 0.8200, Loss: 0.1166
-Epoch   8 Batch  100/1077 - Train Accuracy: 0.8559, Validation Accuracy: 0.8285, Loss: 0.1119
-Epoch   8 Batch  200/1077 - Train Accuracy: 0.8367, Validation Accuracy: 0.8562, Loss: 0.1168
-Epoch   8 Batch  300/1077 - Train Accuracy: 0.8754, Validation Accuracy: 0.8377, Loss: 0.0978
-Epoch   8 Batch  400/1077 - Train Accuracy: 0.8645, Validation Accuracy: 0.8466, Loss: 0.1208
-Epoch   8 Batch  500/1077 - Train Accuracy: 0.8809, Validation Accuracy: 0.8370, Loss: 0.1018
-Epoch   8 Batch  600/1077 - Train Accuracy: 0.8527, Validation Accuracy: 0.8494, Loss: 0.0976
-Epoch   8 Batch  700/1077 - Train Accuracy: 0.8840, Validation Accuracy: 0.8580, Loss: 0.0854
-Epoch   8 Batch  800/1077 - Train Accuracy: 0.8512, Validation Accuracy: 0.8509, Loss: 0.0996
-Epoch   8 Batch  900/1077 - Train Accuracy: 0.8949, Validation Accuracy: 0.8406, Loss: 0.1044
-Epoch   8 Batch 1000/1077 - Train Accuracy: 0.8940, Validation Accuracy: 0.8583, Loss: 0.0921
-Epoch   9 Batch  100/1077 - Train Accuracy: 0.8816, Validation Accuracy: 0.8558, Loss: 0.0839
-Epoch   9 Batch  200/1077 - Train Accuracy: 0.8406, Validation Accuracy: 0.8640, Loss: 0.0897
-Epoch   9 Batch  300/1077 - Train Accuracy: 0.8910, Validation Accuracy: 0.8778, Loss: 0.0733
-Epoch   9 Batch  400/1077 - Train Accuracy: 0.8848, Validation Accuracy: 0.8754, Loss: 0.0948
-Epoch   9 Batch  500/1077 - Train Accuracy: 0.9051, Validation Accuracy: 0.8729, Loss: 0.0770
-Epoch   9 Batch  600/1077 - Train Accuracy: 0.8839, Validation Accuracy: 0.8718, Loss: 0.0768
-Epoch   9 Batch  700/1077 - Train Accuracy: 0.9172, Validation Accuracy: 0.8683, Loss: 0.0649
-Epoch   9 Batch  800/1077 - Train Accuracy: 0.8797, Validation Accuracy: 0.8846, Loss: 0.0759
-Epoch   9 Batch  900/1077 - Train Accuracy: 0.9004, Validation Accuracy: 0.8718, Loss: 0.0864
-Epoch   9 Batch 1000/1077 - Train Accuracy: 0.9196, Validation Accuracy: 0.8984, Loss: 0.0748
+<pre>Epoch   0 Batch  100/1077 - Train Accuracy: 0.4996, Validation Accuracy: 0.5298, Loss: 1.9792
+Epoch   0 Batch  200/1077 - Train Accuracy: 0.5168, Validation Accuracy: 0.5586, Loss: 1.3062
+Epoch   0 Batch  300/1077 - Train Accuracy: 0.5111, Validation Accuracy: 0.5387, Loss: 1.0534
+Epoch   0 Batch  400/1077 - Train Accuracy: 0.5918, Validation Accuracy: 0.5902, Loss: 0.8646
+Epoch   0 Batch  500/1077 - Train Accuracy: 0.5926, Validation Accuracy: 0.6293, Loss: 0.7111
+Epoch   0 Batch  600/1077 - Train Accuracy: 0.6231, Validation Accuracy: 0.6431, Loss: 0.5877
+Epoch   0 Batch  700/1077 - Train Accuracy: 0.6059, Validation Accuracy: 0.6541, Loss: 0.5375
+Epoch   0 Batch  800/1077 - Train Accuracy: 0.6629, Validation Accuracy: 0.6772, Loss: 0.4985
+Epoch   0 Batch  900/1077 - Train Accuracy: 0.7141, Validation Accuracy: 0.7230, Loss: 0.4387
+Epoch   0 Batch 1000/1077 - Train Accuracy: 0.7891, Validation Accuracy: 0.7713, Loss: 0.3232
+Epoch   1 Batch  100/1077 - Train Accuracy: 0.8375, Validation Accuracy: 0.8232, Loss: 0.2152
+Epoch   1 Batch  200/1077 - Train Accuracy: 0.8699, Validation Accuracy: 0.8750, Loss: 0.1823
+Epoch   1 Batch  300/1077 - Train Accuracy: 0.9206, Validation Accuracy: 0.8903, Loss: 0.1247
+Epoch   1 Batch  400/1077 - Train Accuracy: 0.9117, Validation Accuracy: 0.8935, Loss: 0.1145
+Epoch   1 Batch  500/1077 - Train Accuracy: 0.9090, Validation Accuracy: 0.8846, Loss: 0.0761
+Epoch   1 Batch  600/1077 - Train Accuracy: 0.9360, Validation Accuracy: 0.8938, Loss: 0.0783
+Epoch   1 Batch  700/1077 - Train Accuracy: 0.9270, Validation Accuracy: 0.9155, Loss: 0.0638
+Epoch   1 Batch  800/1077 - Train Accuracy: 0.9324, Validation Accuracy: 0.9045, Loss: 0.0668
+Epoch   1 Batch  900/1077 - Train Accuracy: 0.9234, Validation Accuracy: 0.9329, Loss: 0.0638
+Epoch   1 Batch 1000/1077 - Train Accuracy: 0.9118, Validation Accuracy: 0.9421, Loss: 0.0542
+Epoch   2 Batch  100/1077 - Train Accuracy: 0.9406, Validation Accuracy: 0.9364, Loss: 0.0400
+Epoch   2 Batch  200/1077 - Train Accuracy: 0.9418, Validation Accuracy: 0.9240, Loss: 0.0477
+Epoch   2 Batch  300/1077 - Train Accuracy: 0.9618, Validation Accuracy: 0.9471, Loss: 0.0345
+Epoch   2 Batch  400/1077 - Train Accuracy: 0.9379, Validation Accuracy: 0.9371, Loss: 0.0430
+Epoch   2 Batch  500/1077 - Train Accuracy: 0.9602, Validation Accuracy: 0.9506, Loss: 0.0270
+Epoch   2 Batch  600/1077 - Train Accuracy: 0.9658, Validation Accuracy: 0.9521, Loss: 0.0314
+Epoch   2 Batch  700/1077 - Train Accuracy: 0.9777, Validation Accuracy: 0.9510, Loss: 0.0267
+Epoch   2 Batch  800/1077 - Train Accuracy: 0.9699, Validation Accuracy: 0.9496, Loss: 0.0296
+Epoch   2 Batch  900/1077 - Train Accuracy: 0.9602, Validation Accuracy: 0.9560, Loss: 0.0358
+Epoch   2 Batch 1000/1077 - Train Accuracy: 0.9479, Validation Accuracy: 0.9396, Loss: 0.0306
+Epoch   3 Batch  100/1077 - Train Accuracy: 0.9707, Validation Accuracy: 0.9556, Loss: 0.0247
+Epoch   3 Batch  200/1077 - Train Accuracy: 0.9664, Validation Accuracy: 0.9407, Loss: 0.0273
+Epoch   3 Batch  300/1077 - Train Accuracy: 0.9630, Validation Accuracy: 0.9403, Loss: 0.0191
+Epoch   3 Batch  400/1077 - Train Accuracy: 0.9563, Validation Accuracy: 0.9393, Loss: 0.0456
+Epoch   3 Batch  500/1077 - Train Accuracy: 0.9703, Validation Accuracy: 0.9599, Loss: 0.0170
+Epoch   3 Batch  600/1077 - Train Accuracy: 0.9773, Validation Accuracy: 0.9599, Loss: 0.0202
+Epoch   3 Batch  700/1077 - Train Accuracy: 0.9848, Validation Accuracy: 0.9482, Loss: 0.0170
+Epoch   3 Batch  800/1077 - Train Accuracy: 0.9699, Validation Accuracy: 0.9680, Loss: 0.0275
+Epoch   3 Batch  900/1077 - Train Accuracy: 0.9754, Validation Accuracy: 0.9535, Loss: 0.0251
+Epoch   3 Batch 1000/1077 - Train Accuracy: 0.9643, Validation Accuracy: 0.9613, Loss: 0.0202
+Epoch   4 Batch  100/1077 - Train Accuracy: 0.9777, Validation Accuracy: 0.9616, Loss: 0.0226
+Epoch   4 Batch  200/1077 - Train Accuracy: 0.9750, Validation Accuracy: 0.9624, Loss: 0.0203
+Epoch   4 Batch  300/1077 - Train Accuracy: 0.9774, Validation Accuracy: 0.9656, Loss: 0.0149
+Epoch   4 Batch  400/1077 - Train Accuracy: 0.9699, Validation Accuracy: 0.9574, Loss: 0.0226
+Epoch   4 Batch  500/1077 - Train Accuracy: 0.9672, Validation Accuracy: 0.9865, Loss: 0.0146
+Epoch   4 Batch  600/1077 - Train Accuracy: 0.9762, Validation Accuracy: 0.9613, Loss: 0.0137
+Epoch   4 Batch  700/1077 - Train Accuracy: 0.9902, Validation Accuracy: 0.9659, Loss: 0.0107
+Epoch   4 Batch  800/1077 - Train Accuracy: 0.9910, Validation Accuracy: 0.9741, Loss: 0.0144
+Epoch   4 Batch  900/1077 - Train Accuracy: 0.9816, Validation Accuracy: 0.9606, Loss: 0.0198
+Epoch   4 Batch 1000/1077 - Train Accuracy: 0.9654, Validation Accuracy: 0.9513, Loss: 0.0191
 Model Trained and Saved
 </pre>
 </div>
@@ -14067,8 +12992,7 @@ Model Trained and Saved
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14079,7 +13003,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -14094,8 +13018,7 @@ Model Trained and Saved
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14105,7 +13028,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -14125,8 +13048,7 @@ Model Trained and Saved
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14144,7 +13066,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sentence_to_seq</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">vocab_to_int</span><span class="p">):</span>
@@ -14172,7 +13094,9 @@ Model Trained and Saved
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -14184,8 +13108,7 @@ Model Trained and Saved
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14196,7 +13119,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">translate_sentence</span> <span class="o">=</span> <span class="s1">&#39;he saw a old yellow truck .&#39;</span>
@@ -14242,17 +13165,19 @@ Model Trained and Saved
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>INFO:tensorflow:Restoring parameters from checkpoints/dev
 Input
-  Word Ids:      [226, 183, 45, 194, 30, 193, 82]
+  Word Ids:      [51, 182, 129, 161, 61, 92, 165]
   English Words: [&#39;he&#39;, &#39;saw&#39;, &#39;a&#39;, &#39;old&#39;, &#39;yellow&#39;, &#39;truck&#39;, &#39;.&#39;]
 
 Prediction
-  Word Ids:      [100, 141, 285, 217, 201, 50, 37, 1]
-  French Words: il est au camion habituellement rouillé . &lt;EOS&gt;
+  Word Ids:      [149, 135, 317, 348, 330, 68, 167, 152, 1]
+  French Words: il a vu un vieux camion jaune . &lt;EOS&gt;
 </pre>
 </div>
 </div>
@@ -14261,8 +13186,7 @@ Prediction
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
